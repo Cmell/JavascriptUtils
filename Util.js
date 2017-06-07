@@ -18,7 +18,7 @@ function shuffle(array) {
   }
 
   return array;
-}
+};
 
 // Randomly select a specified number of elements from an array and return them.
 // Note that this function recycles if n > array.length, even when replace=false
@@ -55,7 +55,7 @@ function rndSelect(array, n, replace) {
     result = result.concat(newArr.slice(0, remainder));
   }
   return result;
-}
+};
 
 
 /**
@@ -186,7 +186,7 @@ function k_combinations(set, k) {
 		}
 	}
 	return combs;
-}
+};
 
 
 /**
@@ -217,7 +217,7 @@ function combinations(set) {
 		}
 	}
 	return combs;
-}
+};
 
 var contains = function(needle) {
     // Per spec, the way to identify NaN is that it is not equal to itself
@@ -292,7 +292,7 @@ function recycle (arr, num) {
     tempArr = tempArr.concat(arr.slice(0, rem));
   }
   return tempArr;
-}
+};
 
 function randomRecycle (arr, num) {
   // Recycle the array, but randomly choose the last set (smaller than the
@@ -319,4 +319,4 @@ function randomRecycle (arr, num) {
     tempArr = tempArr.concat(rndSelect(arr, rem));
   }
   return tempArr;
-}
+};
