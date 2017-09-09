@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="../Util.js"></script>
+</head>
+<body>
+  <p id="passed">
+    Hey!
+  </p>
+  <p id="failed">
+    Hey!
+  </p>
+  <p id="results">
+
+  </p>
+</body>
+<script>
+  var factorArray = [
+    ['f1l1', 'f1l2', 'f1l3'],
+    ['f2l1', 'f2l2'],
+    ['f3l1', 'f3l2', 'f3l3']
+  ];
+  var results = document.getElementById("results");
+  var res = expandGrid(factorArray)
+  results.innerHTML = res;
+  debugger;
+</script>
+</html>
