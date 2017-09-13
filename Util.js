@@ -490,3 +490,27 @@ if (format == "wide") {
 
 return(cargs);
 }
+
+// Add indexOf if it is not in there.
+if(![].indexOf){
+    Array.prototype.indexOf= function(what, i){
+        i= i || 0;
+        var L= this.length;
+        while(i< L){
+            if(this[i]=== what) return i;
+            ++i;
+        }
+        return -1;
+    }
+    Array.prototype.lastIndexOf= function(what, i){
+        var L= this.length;
+        i= i || L-1;
+        if(isNaN(i) || i>= L) i= L-1;
+        else if(i< 0) i += L;
+        while(i> -1){
+            if(this[i]=== what) return i;
+            --i;
+        }
+        return -1;
+    }
+}
