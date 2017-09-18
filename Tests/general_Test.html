@@ -15,14 +15,12 @@
   </p>
 </body>
 <script>
-  var factorArray = [
-    ['f1l1', 'f1l2', 'f1l3'],
-    ['f2l1', 'f2l2'],
-    ['f3l1', 'f3l2', 'f3l3']
-  ];
-  var results = document.getElementById("results");
-  var res = expandGrid(factorArray)
-  results.innerHTML = res;
-  debugger;
+  var imgArr = [
+    ['./CFD-BM-015-015-N.png', [100,100]],
+    ['./CFD-BM-016-036-N.png', [100,100]],
+    ['./CFD-BM-017-021-N.png', [100,100]],
+    ['./CFD-BM-018-001-N.png', [100,100]]
+  ]
+  preloadResizedImages(imgArr);
 </script>
 </html>
